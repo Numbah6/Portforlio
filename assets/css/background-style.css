@@ -1,0 +1,29 @@
+:root {
+    --primary-color: red;
+    --secondary-color: blue;
+    --tertiary-color: yellow;
+}
+
+.sans-serif {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:100%; 
+}
+
+body {
+    background-color: midnightblue;
+    
+}
+
+p {
+    /* background-color: blue; */
+    background-color: var(--primary-color);
+    border: 3px solid rgb(110, 36, 184);
+    box-shadow: rgba(rgb(211, 46, 46), rgb(53, 170, 53), rgb(13, 13, 161), alpha);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.Skills {
+    list-style-type: none;
+}
