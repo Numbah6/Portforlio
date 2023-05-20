@@ -9,19 +9,14 @@ body {
 
 .container {
     display: grid;
-    max-width: 82em;
-    max-height: auto;
-    margin: auto;
     grid-template-areas: "head head"
                           "nav nav"
                           "about about-info"
-                          "skill skills-info"
+                          "skills skills-info"
                           "projects projects-info"
                           "footer footer";
-
-grid-template-rows: 300px 50px 12.5em auto 500px 500px 50px;
-                        
-
+    grid-template-columns: 3, 1fr;
+    grid grid-auto-rows: 200px;
 }
 
 /* header and image */
@@ -38,6 +33,7 @@ header {
     width: 200%;
     background-repeat: no-repeat;
     background-size: 50% 100%;
+    grid-area: head;
 }
 
 /* Navigation */
@@ -66,3 +62,58 @@ nav a:hover {
     font-size: 1em;
 }
 
+/* Info */
+
+.about {
+    border: 1px;
+    grid-area: about;
+    color: silver;
+}
+
+.about-info {
+    border: 1px;
+    grid-area: about-info;
+    color: silver;
+}
+
+.contact {
+    border: 1px;
+    grid-area: contact;
+    color: silver;
+}
+
+.contact-info {
+    border: 1px;
+    grid-area: contact-info;
+    color: silver;
+}
+
+.skills {
+    border: 1px;
+    grid-area: skills;
+    color: silver;
+}
+
+.skills-info {
+    border: 1px;
+    grid-area: skills-info;
+    color: silver;
+}
+
+.projects {
+    border: 1px;
+    grid-area: projects;
+    color: silver;
+}
+
+.projects-info {
+    border: 1px;
+    grid-area: projects-info;
+    color: silver;
+}
+
+footer {
+    border: 1px;
+    grid-area: footer;
+    color: silver;
+}
