@@ -3,6 +3,11 @@
 body {
     background-color: midnightblue;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
 }
 
 /* Main Grid */
@@ -12,22 +17,28 @@ body {
     grid-template-areas: "head head"
                           "nav nav"
                           "about about-info"
+                          "contact contact-info"
                           "skills skills-info"
                           "projects projects-info"
                           "footer footer";
     grid-template-columns: 3, 1fr;
-    grid grid-auto-rows: 200px;
-}
+    grid-template-rows: 300px 50px 12.50em auto 500px 500px 50px;
+     margin: auto;
+     max-width: auto;
+    max-height: auto;
+    grid-gap: .75%;
+  }
 
 /* header and image */
 
 header {
-    border: 1px silver;
+    border: 1px black;
+    border-style: solid;
     grid-area: head;
     color: silver;    
 }
 
-header {
+ header { 
     background-image: url(/assets/images/cover_00384.avif);
     height: auto;
     width: 200%;
@@ -40,6 +51,7 @@ header {
 
 nav {
     grid-area: nav;
+    border-style: solid;
 }
 
 nav ul {
@@ -65,55 +77,68 @@ nav a:hover {
 /* Info */
 
 .about {
-    border: 1px;
+    border: 4px black;
     grid-area: about;
+    border-style: solid;
     color: silver;
 }
 
 .about-info {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: about-info;
     color: silver;
 }
 
 .contact {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: contact;
     color: silver;
+    text-align: center;
 }
 
 .contact-info {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: contact-info;
     color: silver;
 }
 
 .skills {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: skills;
     color: silver;
+    text-align: center;
 }
 
 .skills-info {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: skills-info;
     color: silver;
+    list-style: none;
 }
 
 .projects {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: projects;
     color: silver;
+    text-align: center;
 }
 
 .projects-info {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: projects-info;
     color: silver;
 }
 
 footer {
-    border: 1px;
+    border: 4px black;
+    border-style: solid;
     grid-area: footer;
     color: silver;
 }
