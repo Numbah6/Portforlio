@@ -35,7 +35,7 @@ header {
     border: 1px black;
     border-style: solid;
     grid-area: head;
-    color: silver;    
+    color: silver;   
 }
 
  header { 
@@ -81,6 +81,7 @@ nav a:hover {
     grid-area: about;
     border-style: solid;
     color: silver;
+    text-align: center;
 }
 
 .about-info {
@@ -141,4 +142,5 @@ footer {
     border-style: solid;
     grid-area: footer;
     color: silver;
+    text-align: center;
 }
