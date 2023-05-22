@@ -10,6 +10,11 @@ ul {
     list-style: none;
 }
 
+.contact-info li {
+    float: left;
+    margin: 5px;
+}
+
 /* Main Grid */
 
 .container {
@@ -89,6 +94,7 @@ nav a:hover {
     border-style: solid;
     grid-area: about-info;
     color: silver;
+    text-align: center;
 }
 
 .contact {
